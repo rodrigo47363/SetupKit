@@ -1,5 +1,11 @@
 #!/bin/bash
-
+# Mensaje de bienvenida
+echo "####################################"
+echo "# SetupKit.sh v1.0 #"
+echo "# Guarda tus contraseñas #"
+echo "# Creado por rodrigo47363 #"
+echo "# https://github.com/rodrigo47363 #"
+echo "####################################"
 # Función para mostrar mensajes de error y salir
 error_exit() {
     echo "Error: $1" >&2
