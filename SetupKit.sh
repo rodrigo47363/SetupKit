@@ -2,7 +2,6 @@
 # Mensaje de bienvenida
 echo "####################################"
 echo "# SetupKit.sh v1.0 #"
-echo "# Guarda tus contraseñas #"
 echo "# Creado por rodrigo47363 #"
 echo "# https://github.com/rodrigo47363 #"
 echo "####################################"
