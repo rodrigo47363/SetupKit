@@ -15,7 +15,7 @@ error_exit() {
 install_packages() {
     echo "Instalando paquetes necesarios..."
     # Actualizar e instalar paquetes esenciales
-    sudo apt update && sudo apt install -y git curl zsh wget unzip || error_exit "No se pudieron instalar los paquetes necesarios"
+    sudo apt update && sudo apt install -y git curl zsh wget unzip php build-essential  aircrack-ng airgeddon kitty ruby rofi   || error_exit "No se pudieron instalar los paquetes necesarios"
 }
 
 # Función para instalar Oh-My-Zsh
