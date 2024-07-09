@@ -1,39 +1,53 @@
 # SetupKit
 
-SetupKit es un conjunto de herramientas diseñadas para facilitar la configuración del entorno de trabajo.
+## Descripción
+SetupKit es un conjunto de herramientas diseñadas para simplificar y automatizar la configuración inicial del entorno de desarrollo en sistemas basados en Unix, especialmente enfocado en entornos de seguridad y pruebas de penetración como Kali Linux.
+
+## Características
+- Instalación automática de paquetes esenciales como git, curl, zsh, entre otros.
+- Configuración avanzada de Zsh con el tema Powerlevel10k y plugins útiles.
+- Instalación de fuentes Nerd Fonts para mejorar la legibilidad en la terminal.
+- Configuración básica de herramientas de seguridad como Aircrack-ng, Airgeddon y Snort.
 
 ## Uso
 
-Para comenzar a usar SetupKit, sigue estos pasos:
+### Prerrequisitos
+- Sistema operativo basado en Unix (como Linux).
+- Conexión a internet para descargar los paquetes y herramientas necesarias.
 
-1. Clona el repositorio en tu máquina local utilizando el siguiente comando:
+### Instalación
 
-    ```bash
-    git clone https://github.com/rodrigo47363/SetupKit.git
-    ```
+1. **Clonar el repositorio:**
 
-2. Accede al directorio SetupKit:
+   ```bash
+   git clone https://github.com/rodrigo47363/SetupKit.git
+   ```
 
-    ```bash
-    cd SetupKit
-    ```
+2. **Acceder al directorio SetupKit:**
 
-3. Ejecuta el script de configuración `setup.sh`:
+   ```bash
+   cd SetupKit
+   ```
 
-    ```bash
-    ./setup.sh
-    ```
+3. **Ejecutar el script de configuración:**
 
-    Este script instalará las herramientas necesarias y realizará la configuración predeterminada del entorno.
+   ```bash
+   ./setup.sh
+   ```
 
-4. ¡Listo! Tu entorno debería estar configurado y listo para usar.
+   Este script instalará todos los paquetes necesarios y realizará la configuración predeterminada del entorno.
+
+4. **Configuración adicional (opcional):**
+   - Puedes personalizar el archivo `~/.zshrc` para ajustar temas y plugins de Zsh según tus preferencias.
 
 ## Contribuir
 
-Si deseas contribuir a este proyecto, siéntete libre de enviar pull requests o abrir issues en el repositorio.
+Si deseas contribuir a SetupKit, te invitamos a enviar pull requests con mejoras, nuevas funcionalidades o correcciones de errores. También puedes abrir issues para reportar problemas o sugerir nuevas características.
 
-## Soporte
+## Contacto
 
-Si necesitas ayuda o tienes alguna pregunta, no dudes en contactar conmigo a través de [mi perfil de GitHub](https://github.com/rodrigo47363).
+Si tienes preguntas, sugerencias o necesitas soporte adicional, por favor contáctame a través de mi perfil de GitHub: [rodrigo47363](https://github.com/rodrigo47363).
 
-¡Gracias por usar SetupKit!
+¡Gracias por utilizar SetupKit para mejorar tu productividad y experiencia en tu entorno de desarrollo!
+
+---
