@@ -113,17 +113,20 @@ install_oh_my_zsh() {
 # Función para instalar Powerlevel10k
 install_powerlevel10k() {
     echo -e "${YELLOW}Instalando Powerlevel10k...${RESET}"
-    mkdir -p ${ZSH_CUSTOM}/themes
+    [ ! -d "${ZSH_CUSTOM}/themes" ] && mkdir -p "${ZSH_CUSTOM}/themes"
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM}/themes/powerlevel10k || error_exit "No se pudo instalar Powerlevel10k"
 }
 
 # Función para descargar e instalar fuentes Hack Nerd Fonts
 install_nerd_fonts() {
     echo -e "${YELLOW}Descargando e instalando fuentes Hack Nerd Fonts...${RESET}"
-    mkdir -p ~/.local/share/fonts || error_exit "No se pudo crear el directorio de fuentes"
-    wget -O /tmp/hack.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip || error_exit "No se pudo descargar el archivo de fuentes"
-    unzip /tmp/hack.zip -d ~/.local/share/fonts/ || error_exit "No se pudo descomprimir el archivo de fuentes"
-    rm /tmp/hack.zip || error_exit "No se pudo eliminar el archivo temporal"
+    FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip"
+    FONT_DIR="$HOME/.local/share/fonts"
+    FONT_FILE="/tmp/hack.zip"
+
+    [ ! -f "$FONT_FILE" ] && wget -O "$FONT_FILE" "$FONT_URL" || error_exit "No se pudo descargar el archivo de fuentes"
+    unzip "$FONT_FILE" -d "$FONT_DIR" || error_exit "No se pudo descomprimir el archivo de fuentes"
+    rm "$FONT_FILE" || error_exit "No se pudo eliminar el archivo temporal"
     fc-cache -fv || error_exit "No se pudo actualizar la caché de fuentes"
 }
 
