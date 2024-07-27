@@ -32,7 +32,7 @@ SetupKit es un conjunto de herramientas diseñadas para simplificar y automatiza
 3. **Ejecutar el script de configuración:**
 
    ```bash
-   ./setup.sh
+   ./SetupKit.sh
    ```
 
    Este script instalará todos los paquetes necesarios y realizará la configuración predeterminada del entorno.
