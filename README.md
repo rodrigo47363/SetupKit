@@ -1,57 +1,89 @@
-# SetupKit
+# README para `SetupKit.sh`
+
+`SetupKit.sh` es un script de automatización diseñado para configurar y personalizar el entorno de desarrollo en sistemas Linux . Instala y configura Oh-My-Zsh, Oh-My-Bash, Powerlevel10k y fuentes Nerd Fonts para los usuarios especificados (incluyendo `root` y el usuario actual).
+
+## Tabla de Contenidos
+
+1. [Descripción](#descripción)
+2. [Requisitos](#requisitos)
+3. [Instalación](#instalación)
+4. [Uso](#uso)
+5. [Configuración](#configuración)
+6. [Contribuciones](#contribuciones)
+7. [Licencia](#licencia)
 
 ## Descripción
-SetupKit es un conjunto de herramientas diseñado para simplificar y automatizar la configuración inicial del entorno de desarrollo en sistemas basados en Unix, con un enfoque particular en entornos de seguridad y pruebas de penetración como Kali Linux.
 
-## Características
-- Instalación automática de paquetes esenciales como `git`, `curl`, `zsh`, entre otros.
-- Configuración avanzada de Zsh con el tema Powerlevel10k y plugins útiles.
-- Instalación de fuentes Nerd Fonts para mejorar la legibilidad en la terminal.
-- Configuración básica de herramientas de seguridad como Aircrack-ng, Airgeddon y Snort.
+`SetupKit.sh` automatiza la configuración de un entorno de desarrollo avanzado al:
+
+- Instalar dependencias básicas y paquetes necesarios.
+- Configurar y personalizar Zsh y Bash con Oh-My-Zsh y Oh-My-Bash.
+- Instalar el tema Powerlevel10k para Zsh.
+- Descargar e instalar fuentes Hack Nerd Fonts.
+- Configurar Zsh y Bash con los ajustes deseados.
+
+## Requisitos
+
+- **Sistemas Operativos Compatibles**: Linux (Debian/Ubuntu, RedHat/CentOS, Arch, SuSE, Alpine) y macOS.
+- **Dependencias**: `curl`, `wget`, `unzip`, `git`, `zsh`, `bash`, entre otros.
+
+## Instalación
+
+Para instalar y configurar el entorno, sigue estos pasos:
+
+1. **Clona el repositorio** (si aún no lo has hecho):
+
+    ```bash
+    git clone https://github.com/rodrigo47363/SetupKit.git
+    cd SetupKit
+    ```
+
+2. **Da permisos de ejecución al script**:
+
+    ```bash
+    chmod +x SetupKit.sh
+    ```
 
 ## Uso
 
-### Prerrequisitos
-- Sistema operativo basado en Unix (como Linux).
-- Conexión a internet para descargar los paquetes y herramientas necesarias.
+Ejecuta el script con privilegios de superusuario para configurar tanto al usuario `root` como al usuario actual:
 
-### Instalación
+```bash
+sudo ./SetupKit.sh
+```
 
-1. **Clonar el repositorio:**
+El script realiza las siguientes acciones:
 
-   ```bash
-   git clone https://github.com/rodrigo47363/SetupKit.git
-   ```
+1. **Instalación de dependencias básicas**: `nmap`, `nikto`, entre otros.
+2. **Instalación de paquetes necesarios**: Incluye herramientas de desarrollo, utilidades de sistema, y herramientas de hacking.
+3. **Instalación de Oh-My-Zsh y Oh-My-Bash**: Configura estos gestores de configuración para Zsh y Bash.
+4. **Instalación de Powerlevel10k**: Tema avanzado para Oh-My-Zsh.
+5. **Instalación de fuentes Nerd Fonts**: Fuentes personalizadas para terminales.
 
-2. **Acceder al directorio `SetupKit`:**
+## Configuración
 
-   ```bash
-   cd SetupKit
-   ```
+El script realiza las siguientes configuraciones:
 
-3. **Dar permisos de ejecución:**
+- **Para Zsh**:
+  - Cambia el tema a `powerlevel10k`.
+  - Habilita plugins útiles como `zsh-syntax-highlighting` y `zsh-autosuggestions`.
 
-   ```bash
-   chmod +x ./SetupKit.sh
-   ```
+- **Para Bash**:
+  - Instala y configura Oh-My-Bash.
 
-4. **Ejecutar el script de configuración:**
+- **Fuentes**:
+  - Instala fuentes Hack Nerd Fonts para una mejor apariencia en la terminal.
 
-   ```bash
-   ./SetupKit.sh
-   ```
+## Contribuciones
 
-   Este script instalará todos los paquetes necesarios y realizará la configuración predeterminada del entorno.
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-5. **Configuración adicional (opcional):**
-   - Puedes personalizar el archivo `~/.zshrc` para ajustar temas y plugins de Zsh según tus preferencias.
+1. **Fork** el repositorio.
+2. **Crea** una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. **Haz** tus cambios y confirma (`git commit -am 'Añadida nueva funcionalidad'`).
+4. **Empuja** la rama (`git push origin feature/nueva-funcionalidad`).
+5. **Abre** un Pull Request.
 
-## Contribuir
+## Licencia
 
-Si deseas contribuir a SetupKit, te invitamos a enviar pull requests con mejoras, nuevas funcionalidades o correcciones de errores. También puedes abrir issues para reportar problemas o sugerir nuevas características.
-
-## Contacto
-
-Si tienes preguntas, sugerencias o necesitas soporte adicional, por favor contáctame a través de mi perfil de GitHub: [rodrigo47363](https://github.com/rodrigo47363).
-
-¡Gracias por utilizar SetupKit para mejorar tu productividad y experiencia en tu entorno de desarrollo!
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
