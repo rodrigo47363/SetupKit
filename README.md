@@ -1,10 +1,10 @@
 # SetupKit
 
 ## Descripción
-SetupKit es un conjunto de herramientas diseñadas para simplificar y automatizar la configuración inicial del entorno de desarrollo en sistemas basados en Unix, especialmente enfocado en entornos de seguridad y pruebas de penetración como Kali Linux.
+SetupKit es un conjunto de herramientas diseñado para simplificar y automatizar la configuración inicial del entorno de desarrollo en sistemas basados en Unix, con un enfoque particular en entornos de seguridad y pruebas de penetración como Kali Linux.
 
 ## Características
-- Instalación automática de paquetes esenciales como git, curl, zsh, entre otros.
+- Instalación automática de paquetes esenciales como `git`, `curl`, `zsh`, entre otros.
 - Configuración avanzada de Zsh con el tema Powerlevel10k y plugins útiles.
 - Instalación de fuentes Nerd Fonts para mejorar la legibilidad en la terminal.
 - Configuración básica de herramientas de seguridad como Aircrack-ng, Airgeddon y Snort.
@@ -23,13 +23,19 @@ SetupKit es un conjunto de herramientas diseñadas para simplificar y automatiza
    git clone https://github.com/rodrigo47363/SetupKit.git
    ```
 
-2. **Acceder al directorio SetupKit:**
+2. **Acceder al directorio `SetupKit`:**
 
    ```bash
    cd SetupKit
    ```
 
-3. **Ejecutar el script de configuración:**
+3. **Dar permisos de ejecución:**
+
+   ```bash
+   chmod +x ./SetupKit.sh
+   ```
+
+4. **Ejecutar el script de configuración:**
 
    ```bash
    ./SetupKit.sh
@@ -37,7 +43,7 @@ SetupKit es un conjunto de herramientas diseñadas para simplificar y automatiza
 
    Este script instalará todos los paquetes necesarios y realizará la configuración predeterminada del entorno.
 
-4. **Configuración adicional (opcional):**
+5. **Configuración adicional (opcional):**
    - Puedes personalizar el archivo `~/.zshrc` para ajustar temas y plugins de Zsh según tus preferencias.
 
 ## Contribuir
@@ -49,5 +55,3 @@ Si deseas contribuir a SetupKit, te invitamos a enviar pull requests con mejoras
 Si tienes preguntas, sugerencias o necesitas soporte adicional, por favor contáctame a través de mi perfil de GitHub: [rodrigo47363](https://github.com/rodrigo47363).
 
 ¡Gracias por utilizar SetupKit para mejorar tu productividad y experiencia en tu entorno de desarrollo!
-
----
