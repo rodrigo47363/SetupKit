@@ -75,7 +75,8 @@ install_packages() {
         libxcb-render0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev \
         libconfig-dev libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev \
         libxcb-glx0-dev libpcre3 libpcre3-dev feh scrot scrub xclip bat locate ranger neofetch \
-        wmname acpi bspwm sxhkd imagemagick cmatrix zsh-syntax-highlighting zsh-autosuggestions \
+        wmname acpi bspwm sxhkd imagemagick cmatrix zsh-syntax-highlighting zsh-autosuggestions texlive-full \
+        texlive-full
         hcxdumptool hcxtools lsd || error_exit "No se pudieron instalar los paquetes necesarios"
 }
 
